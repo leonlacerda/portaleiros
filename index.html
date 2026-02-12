@@ -11,23 +11,55 @@
     <link rel="shortcut icon" href="midia/triskelion.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Início</a><a href="#">Gazeta</a><a href="fabulario.html#breadcrumbs">Fabulário</a><a href="#">Romances</a><a href="#">Contos</a><a href="#">Vídeos</a><a href="#">Contato</a><a href="#">Apoie</a>
-    </nav>
-
-    <header>
-        
-        <div id="vazio-do-menu"></div>
-
-        <section id="section-h1">
-           
-            <img id="logo-portaleiros" src="midia/axis.svg" alt="Logo do Portaleiros">
-
-            <h1>P&oslash;rtaleir&oslash;s<sup>&copy;</sup></h1>
-                <div>
-                    <a href="https://www.youtube.com/channel/UCmZnPuuLDHL44L8hulrkTtA" target="_blank" rel="external"><img class="header-social" src="midia/logo-youtube.png" alt=""></a>
-                    <a id="header-yt" href="https://www.instagram.com/portaleiros" target="_blank" rel="external"><img class="header-social" src="midia/logo-instagram.png" alt=""></a>
+       <header>
+        <nav id="menu-principal">
+            <div id="itens-principal">
+                <div id="links-principal">
+                    <a href="index.html">Início</a><a href="#">Gazeta</a><a href="fabulario.html#breadcrumbs">Fabulário</a><a href="#">Romances</a><a href="#">Contos</a><a href="#">Vídeos</a><a href="#">Contato</a><a href="#">Apoie</a>
                 </div>
+                <div id="ponto">•</div>
+                <div id="login">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <button id="sanduiche">
+                <svg>
+                    <defs>
+                      <filter id="gooeyness">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+                        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                      </filter>
+                    </defs>
+                  </svg>
+                              
+                <div class="plate" onclick="ligaPrincipal();this.classList.toggle('active')">
+                    <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 60,35 H 30" />
+                        <path class="line line2" d="M 40,35 H 70" />
+                        <path class="line line3" d="M 60,50 H 30" />
+                        <path class="line line4" d="M 40,50 H 70" />
+                        <path class="line line5" d="M 60,65 H 30" />
+                        <path class="line line6" d="M 40,65 H 70" />
+                    </svg>
+                </div>
+            </button>
+        </nav>
+        <section id="logo-e-links">
+
+            <div id="logo-portaleiros">
+                <img src="midia/axis.svg" alt="Logo do Portaleiros" loading="lazy">
+            </div>
+            <div id="tit-e-sociais">
+                <div id="titulo-portaleiros">
+                    <h1>P&oslash;rtaleir&oslash;s<sup>&copy;</sup></h1></div>
+
+                <div id="yt-e-ig">
+                    <a id="yt" href="https://www.youtube.com/channel/UCmZnPuuLDHL44L8hulrkTtA" target="_blank" rel="external"><img src="midia/logo-youtube.png" alt=""></a>
+                
+                    <a id="ig" href="https://www.instagram.com/portaleiros" target="_blank" rel="external"><img src="midia/logo-instagram.png" alt=""></a>
+                </div>
+            </div>
         </section>
 
         <section id="section-paralaxe">
