@@ -1,0 +1,313 @@
+
+@charset "UTF-8";
+@font-face {
+    font-family: SigilosEtc;
+    src: url(../fontes/sigilosetc.ttf);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charmonman&family=Comfortaa&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&display=swap');
+
+:root {
+    /* cores */
+    --cor1: #ffd14f;
+    --cor2: #e5ecf4;
+    --cor3: #c3bef7;
+    --cor4: #600076;
+    --cor5: #1c1c1c;
+    /* tipografias */
+    --fonte-portaleiros: 'Expletus Sans', cursive;
+    --fonte-link: 'Comfortaa', cursive;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-sigilos: 'SigilosEtc', sans-serif;
+}
+
+span.sigilo {
+    font-family: var(--fonte-sigilos);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('../midia/bg-test/hypnotize.png');
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+    z-index: -1;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#section-paralaxe {
+    height: calc(100vh - 50px - 140px * 2);
+    background-color: var(--cor2);
+    background-image: url("../midia/pexels-pixabay-207130.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    border: 2px solid var(--cor5);
+}
+
+#section-sub-paralaxe {
+    height: 140px;
+    text-align: center;
+    font-size: 2em;
+}
+
+span.white-bullet {
+    position: relative;
+    top: 10px;
+}
+
+nav#menu-principal {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    width: 100%;
+    max-width: 1000px;
+    height: 50px;
+    box-sizing: border-box;
+    z-index: 1;
+    /* Ao rolar para baixo:
+    background-color: var(--cor3);
+    box-shadow: 0px 1px 2px 0px rgba(96, 0, 118, 0.576);
+    */
+}
+
+div#itens-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+div#itens-principal a {
+
+    font-family: var(--fonte-link);
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--cor5);
+    height: 1em;
+    padding: 2px 6px;
+    align-self: center;
+}
+
+div#itens-principal a:hover {
+    color: var(--cor4);
+    background-color: var(--cor1);
+    border: 1px solid var(--cor5);
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px var(--cor4);
+    transition: .1s;
+}
+
+div#links-principal {
+    display: flex;
+    flex-grow: 4;
+    justify-content: space-around;
+    padding: 0 .7%;
+}
+
+div#ponto {
+    width: max-content;
+    text-align: center;
+    align-self: center;
+}
+
+div#login {
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+}
+
+section#logo-e-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+div#tit-e-sociais {
+    display: flex;
+    flex-grow: 2;
+}
+
+div#logo-portaleiros {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+div#logo-portaleiros img {
+    width: 80px;
+}
+
+div#titulo-portaleiros {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+div#titulo-portaleiros h1 {
+    font: normal bold 3em var(--fonte-portaleiros);
+    align-self: center;
+}
+
+#yt-e-ig {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+a#yt, a#ig {
+    position: relative;
+    align-self: center;
+    padding: 0 20px;
+}
+
+button#sanduiche {
+    display: none;
+    align-self:center;
+    height: 50px;
+    width: 50px;
+    margin: 0 40px;
+    border: none;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+
+    #section-paralaxe {
+        height: calc(100vh - 50px - 140px);
+        z-index: 1;
+    }
+    
+    #section-sub-paralaxe {
+        z-index: 2;
+        color: white;
+    }
+
+    nav#menu-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        z-index: 1;
+
+    }
+    
+    div#itens-principal {
+        position: sticky;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 50%;
+        box-sizing: border-box;
+        background-color: var(--cor2);
+        z-index: -1;
+    }
+    
+    div#itens-principal a {
+        font-family: var(--fonte-link);
+        font-weight: bold;
+        text-decoration: none;
+        color:var(--cor5);
+        height: 1em;
+        padding: 2px 6px;
+        align-self: center;
+    }
+    
+    div#itens-principal a:hover {
+        color: var(--cor4);
+        background-color: var(--cor1);
+        border: 1px solid var(--cor5);
+        border-radius: 5px;
+        box-shadow: 0px 1px 0px 0px var(--cor4);
+        transition: .1s;
+    }
+    
+    div#links-principal {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+        padding: 0 .7%;
+    }
+    
+    div#ponto {
+        width: max-content;
+        align-self: center;
+    }
+    
+    div#login {
+        flex-grow: 1;
+        text-align: center;
+        align-self: center;
+    }
+    
+    section#logo-e-links {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+    }
+
+    div#ponto {
+        display: none;
+    }
+    
+    div#tit-e-sociais {
+        flex-direction: column;
+        flex-grow: 2;
+        width: fit-content;
+
+    }
+
+    div#logo-portaleiros {
+        z-index: 1;
+        margin: auto;
+    }
+    
+    div#logo-portaleiros img {
+        width: 80px;
+        margin: auto;
+    }
+    
+    div#titulo-portaleiros {
+        display: flex;
+        flex-grow: inherit;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    div#titulo-portaleiros h1 {
+        font: normal bold 3em var(--fonte-portaleiros);
+    }
+    
+    #yt-e-ig {
+        flex-grow: 1;
+        display: flex;
+    }
+    
+    a#yt, a#ig {
+        align-self: center;
+        padding: 0 20px;
+    }
+    
+    button#sanduiche {
+        display: flex;
+    }
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portaleiros - Um Fabulário do Ultramundo</title>
+    <meta name="author" content="Leon Lacerda">
+	<meta name="description" content="Portaleiros - Um Fabulário do Ultramundo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charmonman&family=Comfortaa&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/main-fabulario.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="shortcut icon" href="midia/triskelion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/burguer.css">
+    <script src="codigos/script.js" defer>
+     window.addEventListener('resize', conferePrincipal());   
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="menu-principal">
+            <div id="itens-principal">
+                <div id="links-principal">
+                    <a href="index.html">Início</a><a href="#">Gazeta</a><a href="fabulario.html#breadcrumbs">Fabulário</a><a href="#">Romances</a><a href="#">Contos</a><a href="#">Vídeos</a><a href="#">Contato</a><a href="#">Apoie</a>
+                </div>
+                <div id="ponto">•</div>
+                <div id="login">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <button id="sanduiche">
+                <svg>
+                    <defs>
+                      <filter id="gooeyness">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+                        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                      </filter>
+                    </defs>
+                  </svg>
+                              
+                <div class="plate" onclick="ligaPrincipal();this.classList.toggle('active')">
+                    <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 60,35 H 30" />
+                        <path class="line line2" d="M 40,35 H 70" />
+                        <path class="line line3" d="M 60,50 H 30" />
+                        <path class="line line4" d="M 40,50 H 70" />
+                        <path class="line line5" d="M 60,65 H 30" />
+                        <path class="line line6" d="M 40,65 H 70" />
+                    </svg>
+                </div>
+            </button>
+        </nav>
+        <section id="logo-e-links">
+
+            <div id="logo-portaleiros">
+                <img src="midia/axis.svg" alt="Logo do Portaleiros" loading="lazy">
+            </div>
+            <div id="tit-e-sociais">
+                <div id="titulo-portaleiros">
+                    <h1>P&oslash;rtaleir&oslash;s<sup>&copy;</sup></h1></div>
+
+                <div id="yt-e-ig">
+                    <a id="yt" href="https://www.youtube.com/channel/UCmZnPuuLDHL44L8hulrkTtA" target="_blank" rel="external"><img src="midia/logo-youtube.png" alt=""></a>
+                
+                    <a id="ig" href="https://www.instagram.com/portaleiros" target="_blank" rel="external"><img src="midia/logo-instagram.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-paralaxe">
+
+        </section>
+
+        <section id="section-sub-paralaxe">
+            <span class="white-bullet" id="white-bullet1">&#9702</span>
+            <span class="white-bullet" id="white-bullet2">&#9702</span>
+            <span class="white-bullet" id="white-bullet3">&#9702</span>
+            <span class="white-bullet" id="white-bullet4">&#9702</span>
+            <span class="white-bullet" id="white-bullet5">&#9702</span>
+        </section>
+
+    </header>
+
+    <main>
+        <nav id="bread">
+        <p id="breadcrumbs">
+            <a class="breadcrumb-link breadcrumb-inicio" href="#breadcrumbs">Fabulário</a>
+            <a class="breadcrumb-link breadcrumb-depois" href="#breadcrumbs">Introdução</a>
+        </p>
+        </nav><br/>
+        <div id="sob-bread">
+        <side id="indice">
+            <button id="aperta-indice" type="button" onclick="ligaIndice()">⯇</button>
+            <div id="esconder">
+                <h1>Índice</h1>
+                <div id="indice-scroll">
+                    <div id="ltr">
+                        <!-- 01 -->
+                        <div class="linha linha1"><button type="button" class="triangulo" id="botao1">⯆</button>&nbsp;<a class="linkh1" href="#pos-Introducao">Introdução</a></div>
+
+                            <div id="bloco1">
+
+                            <div class="linha linha2"><button type="button" class="triangulo" id="botao11">⯆</button>&nbsp;<a class="linkh2" href="#pos-Glossario-Cosmico">Glossário Cósmico</a></div>
+
+                                <div id="bloco11">
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Circulo-Arcano">Círculo Arcano</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Enarii">Enarii</a></div>
+
+                                </div>
+
+                            <div class="linha linha2"><button type="button" class="triangulo" id="botao12">⯆</button>&nbsp;<a class="linkh2" href="#pos-Paradigma">Paradigma</a></div>
+
+                                <div id="bloco12">
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Metempsicose">Metempsicose</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Navegantes-da-Mente">Navegantes da Mente</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Versoes">Versões</a></div>
+
+                                </div>
+
+                            <div class="linha linha2"><button type="button" class="triangulo" id="botao13">⯆</button>&nbsp;<a class="linkh2" href="#pos-Mundo-Espiritual">Mundo Espiritual</a></div>
+
+                                <div id="bloco13">
+                                
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Fantasmas">Fantasmas</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Novas">Novas</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Genios">Gênios</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Deuses">Deuses</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Deusas-dos-Portais">Deusas dos Portais</a></div>
+
+                                </div>
+
+                            <div class="linha linha2"><button type="button" class="triangulo" id="botao14">⯆</button>&nbsp;<a class="linkh2" href="#pos-Sobrenatural">Sobrenatural</a></div>
+
+                                <div id="bloco14">
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Tipos-de-Poder">Tipos de Poder</a></div>
+
+                                <div class="linha linha3"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh3" href="#pos-Escolas-Arcanas">Escolas Arcanas</a></div>
+
+                                </div>
+
+                                <div class="linha linha2"><button type="button" class="triangulo" id="botao15">⯆</button>&nbsp;<a class="linkh2" href="#pos-Grimorio">Grimório</a></div>
+
+                                <div id="bloco15">
+
+                                    <!-- Conteúdo de Grimório -->
+
+                                </div>
+                            
+                        </div>
+
+                        <!-- 02 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">2 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">2.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">2.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">2.1.1.1 Título</a></div>
+
+                        <!-- 03 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">3 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">3.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">3.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado" id="tri009">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">3.1.1.1 Título</a></div>
+
+                        <!-- 04 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">4 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">4.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">4.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">4.1.1.1 Título</a></div>
+
+                        <!-- 05 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">5 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">5.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">5.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">5.1.1.1 Título</a></div>
+
+                        <!-- 06 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">6 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">6.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">6.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">6.1.1.1 Título</a></div>
+
+                        <!-- 07 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">7 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">7.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">7.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">7.1.1.1 Título</a></div>
+
+                        <!-- 08 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">8 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">8.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">8.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">8.1.1.1 Título</a></div>
+
+                        <!-- 09 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">9 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">9.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">9.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">9.1.1.1 Título</a></div>
+
+                        <!-- 10 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">10 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">10.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">10.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">10.1.1.1 Título</a></div>
+
+                        <!-- 11 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">11 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">11.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">11.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">11.1.1.1 Título</a></div>
+
+                        <!-- 12 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">12 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">12.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">12.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">12.1.1.1 Título</a></div>
+
+                        <!-- 13 -->
+                        <div class="linha linha1"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh1" href="#posicao1">13 Título</a></div>
+
+                        <div class="linha linha2"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh2" href="#posicao2">13.1 Título</a></div>
+
+                        <div class="linha linha3"><button type="button" class="triangulo">⯆</button>&nbsp;<a class="linkh3" href="#posicao3">13.1.1 Título</a></div>
+
+                        <div class="linha linha4"><button type="button" class="triangulo quadrado">⦁</button>&nbsp;<a class="linkh4" href="#posicao4">13.1.1.1 Título</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </side>
+        <article id="principal">
+        <h1 id="pos-Introducao">Indrodução</h1>
+        <p class="subtitulo">Multiverso</p>
+        <div id="estrela-negra">&#10022;</div>
+        <p>Esse livro descreve um multiverso undenário: de onze paralelos conhecidos, do latim denominado <span class="negrito" id="neg-Undenarii">Undenarii</span>. Esse capítulo é essencial para o entendimento dos demais. Ele fornece uma visão por alto do multiverso, introduzindo as leis gerais, os lugares, conceitos, forças, seres, raças e sociedades que o atravessam. Os onze capítulos seguintes descrevem, cada um, um universo diferente, em regiões de interesse da Via-Láctea. Por fim, o índice remissivo traz os termos negritados, permitindo cruzar referências aos conceitos do livro como se fossem verbetes.</p>
+        <h2 id="pos-Glossario-Cosmico">Glossário Cósmico</h2>
+        <p>De seus visitantes usuais, aqui chamados <span class="negrito" id="neg-portaleiros">portaleiros</span>, os universos receberam os nomes: <span class="negrito" id="neg-Prima">Prima</span>, <span class="negrito" id="neg-Justa">Justa</span>, <span class="negrito" id="neg-Teradom">Teradom</span>, <span class="negrito" id="neg-Drunyard">Drunyard</span>, <span class="negrito" id="neg-Shenyuan">Shenyuan</span> (深渊), <span class="negrito" id="neg-Pantalassa">Pantalassa</span>, <span class="negrito" id="neg-Miradora">Miradora</span>, <span class="negrito" id="neg-Kugelblitz">Kugelblitz</span>, <span class="negrito" id="neg-Shoukan">Shoukan</span> (召喚), <span class="negrito" id="neg-Vrkshalaya">Vrkshalaya</span> (वृक्षालय) e <span class="negrito" id="neg-Santuário">Santuário</span> – alguns desses variando um pouco segundo a língua.</p>
+        <p>Cada universo possui uma <span class="negrito" id="neg-versão">versão</span> do planeta <span class="negrito" id="neg-Terra">Terra</span>. Essas versões receberam, dos nativos de uma delas, nomes de um elemento da natureza, a exemplo da própria Terra. Respectivamente: <span class="negrito" id="neg-Gelo">Gelo</span>, Terra, <span class="negrito" id="neg-Pedra">Pedra</span>, <span class="negrito" id="neg-Cinzas">Cinzas</span>, <span class="negrito" id="neg-Fogo">Fogo</span>, <span class="negrito" id="neg-Agua">Água</span>, <span class="negrito" id="neg-Musgo">Musgo</span>, <span class="negrito" id="neg-Luz">Luz</span>, <span class="negrito" id="neg-Magma">Magma</span>, <span class="negrito" id="neg-Vento">Vento</span> e <span class="negrito" id="neg-Fossil">Fóssil</span>.</p>
+        <p>O nome do Gelo também remonta à sua antiguidade. Foram os <span class="negrito" id="neg-gelanos">gelanos</span> que, em visita à Terra, perceberam os nomes de elementos para os dois planetas e passaram a nomear outras versões sob o mesmo fundamento – a maioria dos nativos ainda chama seu próprio mundo de Terra. Os portaleiros não tinham formas breves para versões da Terra em específico e acabaram também adotando os termos. O sistema tem a vantagem de ter os nomes dos planetas lastreados nos dos elementos, de modo a poderem ser pronunciados em qualquer língua, facilitando-lhes o acesso.</p>
+        <p>Não existe um consenso parecido para versões de outros astros. São referidas pelos nomes de domínio do interlocutor associados ao do universo; e.g.: Orion de Miradora, para um terrano. Menções a estrelas podem também aludir ao sistema estelar da estrela em questão. É assim que <span class="negrito" id="neg-Sol-de-Drunyard">Sol de Drunyard</span> e <span class="negrito" id="neg-Sol-de-Kugelblitz">Sol de Kugelblitz</span>, para citar expressões recorrentes daqui para frente, indicam as versões do Sistema Solar destes paralelos.</p>
+        <h3  id="pos-Circulo-Arcano">Círculo Arcano (parte 1)</h3>
+        <p>O <span class="negrito" id="neg-Circulo-Arcano">Círculo Arcano</span> compreende um círculo místico ladeado de doze símbolos que os portaleiros chamam <span class="negrito" id="neg-sigilos">sigilos</span>. Ele pode aparecer como um filtro dos sonhos, bastidor de bordado, rosácea de vitral, risca de giz, marca de sal, etc. Para os portaleiros, cada sigilo representa um universo que eles conhecem junto à sua respectiva versão da Terra. Apenas um deles, como visto a seguir, foge à essa regra e tem caráter alegórico. Cada sigilo também pode trazer uma cor do círculo cromático a partir das cores primárias: azul, vermelho e amarelo.</p>
+        <p>O sigilo ¥,, colorido de azul, expressa o par Vrkshalaya-Vento; o £, de cor violeta, retrata o par Teradom-Pedra; o €, de cor roxo, é aquele referido como alegórico e apresenta o par detalhado na seção Mundo Espiritual (p. 21); o zangão <span class="sigilo">a</span>, de matiz magenta, refere o par Drunyard-Cinzas; a pira <span class="sigilo">b</span>, de matiz vermelho, indica o par Shenyuan-Fogo; o Λ, tingido de vermelhão, mostra o par Shoukan-Magma; a ampulheta <span class="sigilo">d</span>, tingida de laranja, expressa o par Justa-Terra; o Δ pintado de âmbar, retrata o par Santuário-Fóssil; o Σ, pintado de amarelo, apresenta o par Kugelblitz-Luz; o Φ, em tom verde-limão, refere o par Miradora-Musgo; a lágrima <span class="sigilo">c</span>, em tom verde, indica o par Pantalassa-Água; o quadricórnio <span class="sigilo">e</span>, iriado de ciano, mostra o par Prima-Gelo (continua na página ).</p>
+        <h3 id="pos-Enarii">Enarii</h3>
+        <p>Existem muitos outros paralelos além dos onze e até mesmo outros multiversos, como crêem os portaleiros, ao ponto de alguns preferirem referir-se ao multiverso como <span class="negrito" id="neg-Enarii">Enarii</span> (n-arii).</p>
+        <p>Os onze paralelos são especiais, pois mantêm-se desde a descoberta de Santuário, séculos atrás, como únicos sabidos por todos os portaleiros. Têm passagens seguras, permanentes, milhares de visitantes e novos deles a cada ano. Ao passo que os demais paralelos, somente rumorados, são invenção na grande maior parte e inspiram suspeição e zombaria.</p>
+        <p>Esse livro trata apenas dos onze paralelos. Mas nada impede que se visitem outros, nem que novos sejam confirmados e o multiverso revisto como duo, tridenário ou adiante. Quanto mais confirmados, mais apelo em chamar o multiverso de Enarii – e no extremo, até mesmo os paralelos por meio de códigos numéricos.</p>
+        <h2 id="pos-Paradigma">Paradigma</h2>
+        <figure class="quote">
+            <blockquote>
+                E se eu te dissesse que crença e ficção não são o que você pensa? Que estivemos sempre vislumbrando mundos paralelos com linhas de tempo alternativas? E se eu te dissesse que existem meios para atravessar entre esses mundos?
+            </blockquote>
+            <figcaption>
+              &mdash; Prof. Lenardo Varalonga
+            </figcaption>
+          </figure>
+        <p>O paradigma central dessa ambientação consiste em que os mundos que os portaleiros encontram têm realidades muito similares a crenças e ficções de outros – ao ponto de isso não poder ser mera coincidência. Os viajantes concluíram que nossa imaginação é informada por ocorrências de outros universos. Por exemplo, não são algumas raças do Musgo que imitam as de Tolkien, mas antes, esse escritor de fantasia da Terra que as acedeu em pensamento. A maioria deles não sabe como isso ocorre – uma matéria de infindáveis debates sobre a realidade e o conhecimento. Mas o leitor pode encontrar essa resposta logo a seguir.</p>
+        <h3 id="pos-Metempsicose">Metempsicose</h3>
+        <p>A verdade sobre a imaginação, ecoada no pensamento antigo clássico e entrevista por alguns viajantes, é que saberes de outros mundos são lembranças recuperadas de vidas passadas. Os que morrem renascem mudados, sem memória, por vezes para outra espécie ou em outro mundo, no que é chamado de <span class="negrito" id="neg-metempsicose">metempsicose</span> ou transmigração da alma. Ainda mais revelador, a alma é imortal e a morte, uma enganação. Em vez do fim, um ciclo eterno de esquecimento e transição, enquanto lugares do pós-vida, como o Céu e o Inferno, somente outras etapas desse ciclo.</p>
+        <h3 id="pos-Navegantes-da-Mente">Navegantes da Mente</h3>
+        <p>No empreendimento de comunicar às sociedades as visões de outros mundos, se destacam os artistas, lunáticos, místicos, psicotropistas e criadores de ficção. Os viajantes se referem a eles como <span class="negrito" id="neg-noonautas">noonautas</span>, os navegantes da mente. Uma hipótese verdadeira, mas pouco testada, dita até mesmo que locais onde viveram ou se inspiraram os tipos especialmente criativos, são pontos de fábrica da realidade enfraquecida, onde se torna mais fácil a passagem entre paralelos.</p>
+        <h3 id="pos-Versoes">Versões</h3>
+        <p>Existe sempre uma versão, ou análogo de um lugar, em cada universo: um ponto em um paralelo interligado a outro pelo transporte físico, com frequência coincidente em muitos aspectos.</p>
+        <p>Os viajantes não sabem realmente onde cada paralelo se encontra em qualquer escala ou <span class="negrito" id="neg-dimensão">dimensão</span> física*, tampouco podem apontar para que tipo de multiverso habitam. Podem somente confirmar por experiência, porque os mundos e as estrelas são parecidos, que outros universos existem – obviamente, isso nunca os impediu de acreditar em um sem-número de teorias!</p>
+        <div class="nota-de-rodapé"><p><strong>[Nota de rodapé]</strong> Não se deve confundir universo com dimensão, ainda que esses termos possam ser sinônimos no jargão coloquial. Dimensão se refere a altura, largura, comprimento, tempo, dimensões adicionais teóricas, matemáticas e virtuais. Uma única dimensão pode abrigar infinitos universos. Não devendo a noção de múltiplos universos à de multiplas dimensões, apenas a primeira é tratada nesse livro.</p></div>
+        <p>A sucessão de eventos ocorridos em um universo é sua <span class="negrito" id="neg-linha-do-tempo">linha do tempo</span>. Diferenças entre universos se devem à <span class="negrito" id="neg-idade">idade</span> de cada um, i.e, a quanto tempo cada um existe, e à sua <span class="negrito" id="neg-ramificação">ramificação</span>, i.e, ao momento em que algo ocorreu diferente pela primeira vez entre eles. A ramificação pode influenciar de somente um planeta a todo o universo. Seja como for, cada universo só pode ser nomeado e entendido com base no lugar de origem dos que o nomeiam.</p>
+        <p>Quando a versão é de um ser vivo, ela é chamada de <span class="negrito" id="neg-duplo">duplo</span>. Sua ocorrência simultânea é comum entre paralelos semelhantes, mas rara entre muito distintos, como atualmente os onze conhecidos. Duplos nessas condições, por já serem anomalias, podem ser desde idênticos a vagamente reconhecíveis - de outras raças, de outras espécies, de outros planetas e até mesmo versões-pessoa de brinquedos, animais de estimação, amigos imaginários, etc. Alguns viajantes pensam que duplos compartilham uma alma, outros, que meramente têm vidas parecidas.</p>
+        <h2 id="pos-Mundo-Espiritual">Mundo Espiritual</h2>
+        <p>Antes de renascerem, os mortos, ou <span class="negrito" id="neg-espiritos">espíritos</span>, continuam por algum tempo em seu mundo, em uma forma incorpórea. Essa forma é chamada de <span class="negrito" id="neg-corpo-etereo">corpo etéreo</span>, posto que é feita de <span class="negrito" id="neg-eter">éter</span>, uma matéria que não interage com a matéria comum.</p>
+        <p>Os portaleiros que inquirem os mortos conhecem esse interregno. Chamam-no de <span class="negrito" id="neg-Orum">Orum</span>, conforme a crença iorubá, para referir-se ao etéreo de todo o multiverso, mas apenas de <span class="negrito" id="neg-Umbra">Umbra</span>, para indica-lo em um lugar específico: “a Umbra daquele universo, versão da Terra, planeta, etc”. Na simbologia dos viajantes, o Orum representa um 12º universo e a Umbra, uma 12ª versão da Terra, a despeito de conhecerem muitas umbras. Esse é o motivo de haver doze sigilos dentro de seu círculo mágico.</p>
+        <h3 id="pos-Fantasmas">Fantasmas</h3>
+        <p>Ao morrer, todos os seres se tornam <span class="negrito" id="neg-fantasmas">fantasmas</span>, com corpos etéreos que se moldam no corpo idealizado pelo inconsciente do ser. Fantasmas possuem frágil ligação com seu mundo, facilmente renascendo – são os únicos espíritos capazes de tornar-se portaleiros. Outros, ainda, permanecem entre os vivos por causa de assuntos inacabados. Às vezes eles os assombram, podendo brevemente torná-los <span class="negrito" id="neg-possuidos">possuídos</span>, ou seja, controlar seus corpos.</p>
+        <h3 id="pos-Novas">Novas</h3>
+        <p>A metempsicose não é um evento único, e pode ser decomposta em quatro fases: a <span class="negrito" id="neg-morte">morte</span>, quando os mortais se tornam espíritos, o <span class="negrito" id="neg-esquecimento">esquecimento</span>, quando os espíritos perdem a memória, o <span class="negrito" id="neg-arrebatamento">arrebatamento</span>, quando desvanecem e revanescem, podendo cruzar universos; e a <span class="negrito" id="neg-reencarnacao">reencarnação</span>, quando voltam a ser mortais num corpo recém-nascido.</p>
+        <p>Após um arrebatamento, os espíritos retornam etéreos e sem forma definida – quando, tomados por ocultistas como almas novas, são chamados de <span class="negrito" id="neg-novas">novas</span>. Nesse estado, podem aparecer aos mortais como orbes luminosas: os <span class="negrito" id="neg-fogos-fatuos">fogos-fátuos</span>.</p>
+        <p>Entre os espíritos, os novas possuem a mais frágil ligação com seu mundo, podendo-se, de fato, falar de inúmeros arrebatamentos antes da reencarnação.</p>
+        <p>Enquanto não renascem, novas não têm propósito. Não fazem nada senão aparecer ou desaparecer, se aproximar ou se afastar, erraticamente, de seus observadores. Mas são tábulas rasas de incalculável potencial, seja em poder, inteligência ou qualquer outro atributo (ver Imbuimento, p.).</p>
+        <h3 id="pos-Genios">Gênios</h3>
+        <p>Os fantasmas que duram mais tempo se agarram ao mundo recorrendo a algo perene. Quando obstinam tanto tempo que se esquecem de si, esse algo se torna sua <span class="negrito" id="neg-essencia">essência</span> e eles vivenciam a <span class="negrito" id="neg-eternizacao">eternização</span>, sendo transfigurados em gênios – também chamados <span class="negrito" id="neg-arcanos">arcanos</span>. Nesse estágio, tornam-se muito mais poderosos. Através de sua essência, os gênios criam uma forte ligação com seu mundo, dificilmente renascendo. Por outro lado, suas almas são rapidamente arrebatadas ao deixar seu universo.</p>
+        <p>Os gênios podem possuir longamente os mortais. Isso os permite ter filhos com eles, e raramente o fazem, dando origem a <span class="negrito" id="neg-semigenios">semigênios</span> e <span class="negrito" id="neg-linhagens-arcanas">linhagens arcanas</span>. Além disso, têm duas formas, uma etérea e <span class="negrito" id="neg-aparente">aparente</span>, usada para aparecer aos mortais, e uma <span class="negrito" id="neg-verdadeira">verdadeira</span>, incompreensível, que mata de medo e fascínio ou enlouquece as pessoas normais.</p>
+        <p>Os gênios possuem <span class="negrito" id="neg-antelacoes">antelações</span>, predileções por formas aparentes e corpos de matéria comum que possuem. A maioria toma a forma e o corpo de uma raça (veja as antelações por cada raça na seção Gentes e Entes), os demais, de um tipo de animal, vegetal, fungo, alga, objeto, rocha, solo, mineral, elemento, etc. Nem sempre tomam formas aparentes que existem no mesmo universo.</p>
+        <p>Os gênios são únicos, cada qual com sua própria essência e antelação. Mas eles podem vir de famílias com características parecidas, chamadas de <span class="negrito" id="neg-hostes">hostes</span>. Também podem ser classificados em grupos diferentes, de acordo com o povo que os contata.</p>
+        <p>Os nativos do Musgo e, depois deles, os portaleiros e gelanos, agrupam os gênios em sete <span class="negrito" id="neg-ascendentes">ascendentes</span> segundo sua essência: como <span class="negrito" id="neg-anjos">anjos</span>, se o bem ou um bom sentimento, <span class="negrito" id="neg-demonios">demônios</span>, se o mau ou um mal sentimento, <span class="negrito" id="neg-jins">jins</span>, se um objeto, <span class="negrito" id="neg-elementais">elementais</span>, se um elemento, <span class="negrito" id="neg-fadas">fadas</span>, se um lugar ou paisagem, <span class="negrito" id="neg-totens">totens</span>, se um tipo de ser vivo e <span class="negrito" id="neg-numes">numes</span>, se uma linhagem ou memória de vida.</p>
+        <h3 id="pos-Deuses">Deuses</h3>
+        <p>Além de poderem ser considerados <span class="negrito" id="neg-deuses-menores">deuses menores</span>, em um raro episódio chamado <span class="negrito" id="neg-apoteoses">apoteose</span>, os gênios podem se alçar a <span class="negrito" id="neg-deuses">deuses</span> e atingir poder infinito. Por vezes conservam traços, como ter <span class="negrito" id="neg-dominios">domínios</span> derivados de suas antigas essências.</p>
+        <p>Os deuses são onipotentes, mas limitados por outros poderes infinitos, como o de sua ligação com seu universo. Não podem deixá-lo, a não ser que escolham renascer como mortais.</p>
+        <p>Eles podem procriar com qualquer ser como desejarem, gerando <span class="negrito" id="neg-semideuses">semideuses</span> e <span class="negrito" id="neg-linhagens-divinas">linhagens divinas</span>. Podem até mesmo conceder poderes criando linhagens “adotivas”. Possuem uma forma verdadeira, ainda mais opressiva que a dos gênios, mas podem assumir qualquer forma aparente. Não obstante, têm aspectos preferidos, denominados <span class="negrito" id="neg-avatares">avatares</span>. Também podem pertencer a famílias, chamadas de <span class="negrito" id="neg-panteões">panteões</span>.</p>
+        <h3 id="pos-Deusas-dos-Portais">Deusas dos Portais</h3>
+        <p>Existem três <span class="negrito" id="neg-deusas-dos-portais">deusas dos portais</span>, cujo poder alcança todos os universos. Não são necessariamente mais poderosas que os <span class="negrito" id="neg-deuses-locais">deuses locais</span>, chegando a integrar incontáveis panteões. Os portaleiros as nomeiam <span class="negrito" id="neg-Deia">Deia</span>, a mônada, a origem e a união de tudo, o algo ao invés do nada; <span class="negrito" id="neg-Azel">Azel</span>, a díada, a falsa Deia, o grilhão das almas; e <span class="negrito" id="neg-Saga">Saga</span>, a terceira deusa, a trapaceira, a opositora de suas deãs. Enquanto Deia e Azel são identificadas com Deus e o Diabo, Saga tem seu nome intercambiado com Exu, Hermes, a Serpente e outros deuses trapaceiros.</p>
+        <p>Invejosa de Deia, a criadora original, Azel aprisionou as consciências em universos materiais, negando-lhes o acesso à realidade. Também criou a metempsicose, na verdade uma “transferência de cela” para dificultar o desvendar de sua prisão.</p>
+        <p>Porém, Saga, a deusa rebelde dos mortais, a diva, por excelência, dos portais, em um desafio à tirania de Azel, concedeu que os portaleiros cruzassem os universos. Uma vez como legado de Saga, muitos deles adoram a essa deusa. A díada, em represália, arregimentou uma hoste de demônios para matá-los: os <span class="negrito" id="neg-cortesaos-de-azel">cortesãos de Azel</span>. Ressentida com Deia por permitir o mau, Saga também pode ser, segundo uma profecia, a origem de uma quarta deusa: <span class="negrito" id="neg-Nemo">Nemo</span>, o Nada, aquela que “é o que não é”, o fim literal dos tempos crido pelos <span class="negrito" id="neg-holocidas">holocidas</span>.  </p>
+        <h4>Corte de Azel</h4>
+        <p>Os cortesãos de Azel são demônios e, como tal, seres de extremo poder, que possuem, corrompem e caçam os portaleiros. Porém, possuem algumas fraquezas. Em primeiro lugar, mesmo podendo tomar um corpo potente para matar com força bruta, preferem possuir alvos-chave para executar planos lentos e cruéis.</p>
+        <p>Enquanto arcanos, não conseguem possuir devotos com <span class="negrito" id="neg-fe-verdadeira">fé verdadeira</span>, uma crença inabalável em seus deuses, contra a sua vontade. Alguns amuletos, como os patuás com mil nomes de Saga usados pela maioria dos viajantes, também protegem contra a possessão.</p>
+        <p>Ainda enquanto arcanos, os cortesãos não conseguem seguir os viajantes entre universos. Mas existem portaleiros que escolhem se aliar a eles e caçar os seus iguais.</p>
+        <p>Como último ponto fraco, mesmo percebidos numa <span class="negrito" id="neg-Corte">Corte</span> (ou <span class="negrito" id="neg-Cortejo">Cortejo</span>) <span class="negrito">de Azel</span>, esses demônios competem entre si, pois almejam cair nas graças da <span class="negrito" id="neg-Rainha-do-Inferno">Rainha do Inferno</span>, como chamam Azel, e tornar-se eles mesmos reis acima dos outros demônios.</p>
+        <h4>Missa dos Mortos</h4>
+        <p>Mesmo vista com descrença pela maioria dos portaleiros, a deusa Nemo é adorada e aguardada pela <span class="negrito" id="neg-Missa-dos-Mortos">Missa dos Mortos</span>, uma seita apocalíptica exclusiva, mas que une toda classe de seres, de deuses a mortais. Nessa Missa comungam, sobretudo, fantasmas e mortos-vivos, pois muitos que morrem se sentem enganados, seja ao não adentrar um reino prometido, seja ao não receber seu descanso final. Logo eles percebem que onde há, há injustiça e, assim, não pode existir um céu verdadeiro. Então passam a buscar o Nada, o único meio de perfeição concebível, a <span class="negrito" id="neg-morte-final">morte final</span> de si, de tudo e de todos; sendo por isso chamados holocidas. Eles acreditam que não há crime em um crime perfeito, onde morre toda vítima, acusador e assassino, onde cessa toda dor, memória e maldade. Diferente dos falsos fins dos tempos de outras escatologias, em que nada realmente acaba, no fim dos holocidas apenas uma contraintuitiva Nemo deve — não — existir.</p>
+        <p>A Missa dos Mortos existe em muitos universos pois foi difundida pelos portaleiros, mas eles estão longe de ser maioria entre seus membros.</p>
+        <p>Os holocidas chamam aos seus opositores de <span class="negrito" id="neg-zelotes">zelotes</span>: tanto os que defendem a criação de Deia, o bem, o mau, o livre arbítrio, quanto os que não acreditam em Nemo, reputando-lhe como uma abstração impossível. Mas os poucos dos primeiros que tentam impedi-los, esses são seus verdadeiros inimigos.</p>
+    </article>
+
+        <!-- Modelo de Capítulo
+        <article id="principal">
+            <h1 id="posicao1">Título do Capítulo</h1>
+            <p id="subtitulo">Subtítulo</p>
+            <div id="estrela-negra">&#10022;</div>
+            <p>Lorem <a href="#">ipsum</a> dolor sit amet consectetur adipisicing elit. Dignissimos nam distinctio sapiente similique nostrum dolore ipsa consectetur aspernatur quasi esse reiciendis, itaque obcaecati soluta tenetur consequatur dicta ex nemo illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt, quasi aliquam explicabo facere sit doloremque rerum saepe libero veniam, porro nulla dicta. Tempora enim <a href="#">vitae</a> eos optio veniam officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dignissimos molestiae nihil quisquam eius autem cum odio asperiores amet, dicta quam sunt ipsa cumque, nam assumenda ad quos libero. Voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, adipisci eaque? Veritatis, inventore quasi aut molestiae adipisci eveniet, eaque mollitia nam quod fugit sapiente! Possimus sed ullam quis atque doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis! Velit alias libero repudiandae illo tempora quasi voluptas. Accusantium nobis voluptas non explicabo fugit tempore, obcaecati culpa possimus magni sint?</p>
+            <h2 id="posicao2">1 Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem repellat molestias hic tenetur libero nisi doloribus est modi unde perferendis ad eligendi labore, neque laboriosam veritatis, explicabo harum distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga blanditiis, sit tenetur excepturi non veniam quia molestiae natus odit ipsam labore laboriosam quis, porro velit debitis in ipsa? Accusamus, error!</p>
+            <h3  id="posicao3">1.1 Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit tenetur aliquid repellendus error odit repellat ullam at, quasi voluptatum non quisquam molestias numquam ut deleniti dolorem. Voluptatem sint repellendus ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam exercitationem blanditiis in labore asperiores! Error dicta atque, eveniet provident, dignissimos pariatur quam cupiditate corrupti porro eos totam perspiciatis minus? Explicabo!</p>
+            <h4 id="posicao4">1.1.1 Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti numquam voluptas quaerat odit excepturi ea rerum placeat nam incidunt animi aut repudiandae voluptatibus fugit iste omnis, earum modi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci nesciunt fugit dolor inventore, voluptatum, iure a labore ducimus voluptas, rerum repellendus vero! Beatae tempore consectetur quaerat quibusdam quis quam.</p>
+            <h5>1.1.1.1 Título</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia eius nam magnam deleniti corrupti ipsa ad repudiandae eos dolorem architecto rerum explicabo ducimus voluptatum, consequuntur provident. Possimus, commodi quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque fugit iusto, iure beatae, cupiditate optio pariatur dicta consectetur totam, vero aut possimus. Aut atque repellendus quis numquam eos sapiente!</p>
+            <h5>1.1.1.2 Título</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, dolorum ex quis voluptatem officiis quod delectus hic dolore voluptates eveniet mollitia animi ullam. Doloremque, atque! Reiciendis cum accusantium omnis esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea ut, a magnam nulla illum ratione nobis provident iure facere quod porro inventore nihil ipsam maiores? Doloribus minus id fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, repellat praesentium sint quaerat eum vitae earum non aut eos totam ipsum, nulla aliquam voluptatem odit, repellendus temporibus assumenda corporis delectus!</p>
+            <h3>1.2 Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, illo iusto consequatur eius sint error illum quam corrupti? Voluptate similique cupiditate unde ut repellendus, nesciunt deserunt sint natus asperiores. Est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quas maiores, temporibus vel ipsa nam minus ab voluptatibus, eaque quam maxime iste quos. Quo, officia quis rerum placeat repellat veritatis.</p>
+            <h4>1.2.1 Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, at quis? Magnam illo dolorum veniam doloremque et esse non aliquid doloribus, illum nisi? Aspernatur vitae vel saepe, doloribus laboriosam distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione suscipit magnam itaque! Accusamus fugiat quos nemo modi delectus. Dignissimos id, cumque veritatis quaerat minima natus cupiditate maiores perspiciatis aliquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas minus. Enim, magnam amet beatae labore veniam placeat nisi est expedita porro esse nobis aperiam, odio dicta nulla iste molestiae!</p>
+            <h4>1.2.2 Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi harum sunt consequuntur nesciunt debitis quisquam rem voluptates perspiciatis iusto, sapiente necessitatibus illo aperiam ducimus cum sequi. Dignissimos, excepturi quae.</p>
+            <h2>2 Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt saepe, voluptatum recusandae quo accusantium nulla iure asperiores voluptas, corporis odio error, quisquam mollitia quidem! Eaque odit eos tempore temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus laboriosam sed eligendi doloribus aut, laborum natus nisi. Sit error qui provident, atque unde id ad magnam aspernatur iure adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam laboriosam vero odio. Laboriosam architecto in aspernatur provident libero soluta molestiae! Laudantium, deserunt optio. Eligendi cupiditate quas minus tempore ad.</p>
+            <h3>2.1 Título</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eius ducimus tempora nihil repudiandae facere quae rerum quisquam dicta esse. Rem commodi ea sed voluptates ipsam cupiditate in, adipisci sunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis alias recusandae tenetur distinctio assumenda! Aut eos, ab beatae nobis velit obcaecati ullam consequuntur eligendi modi nihil, harum iste veritatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sit vero voluptates provident doloribus magni obcaecati, labore tempore laboriosam id vel reiciendis cupiditate nam aspernatur sunt! Reiciendis sequi assumenda eius!</p>
+            <h2>3 Título</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur asperiores distinctio beatae excepturi! Quo eius amet recusandae autem, quibusdam, adipisci assumenda temporibus vel, culpa at expedita natus nemo perspiciatis rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, labore soluta doloremque in dolorum facere sint. Autem, enim architecto. Expedita consequatur excepturi unde exercitationem aperiam porro atque, incidunt optio nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa vero sequi. Ipsam dolorem fuga tenetur fugit possimus enim aliquam, doloremque magni. Sunt ab mollitia saepe modi corrupti similique! Autem.</p>
+            <h3>3.1 Título</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta distinctio reprehenderit cum pariatur, architecto consequatur debitis possimus similique rem exercitationem! Culpa voluptate aliquam quia accusantium excepturi placeat necessitatibus dicta perspiciatis?</p>
+            <h4>3.1.1 Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam saepe laborum odio similique est esse dolore ipsa voluptatem blanditiis quis! Vitae quisquam corporis ut placeat. Ad expedita quam error ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquid consectetur mollitia cumque ex reprehenderit sequi ipsum aut assumenda iure ducimus culpa iste autem dolorem, pariatur tempora blanditiis nulla itaque.</p>
+            <h5>3.1.1.1 Título</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, dolorum ex quis voluptatem officiis quod delectus hic dolore voluptates eveniet mollitia animi ullam. Doloremque, atque! Reiciendis cum accusantium omnis esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea ut, a magnam nulla illum ratione nobis provident iure facere quod porro inventore nihil ipsam maiores? Doloribus minus id fugit! Lorem ipsum dolor sit amet.</p>
+        </article>
+        -->
+        </div>
+    </main>
+    
+    <footer>
+        <section class="section-info-adicional">
+            <h1>Informação Adicional</h1>
+
+            <div class="div-links-finais">
+                <h2>De Contato</h2>
+                <div id="div-flutuante-1">
+                    <a href="#">Email</a><br>
+                    <a href="https://api.whatsapp.com/send?phone=5577991245948&text=Oi%2C%20Leon.%20Tudo%20bem%3F%20Te%20encontrei%20atrav%C3%A9s%20do%20seu%20site%2C%20o%20Portaleiros." target="_blank" rel="external">Whatsapp</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="div-links-finais">
+                <h2>Social</h2>
+                <div>
+                    <a href="#">YouTube</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Compartilhe</a>
+                </div>
+            </div>
+            <div class="div-links-finais">
+                <h2>Profissional</h2>
+                <div>
+                    <a href="#">LinkdIn</a><br>
+                    <a href="#">GitHub</a><br>
+                    <a href="#">Lattes</a>
+                </div>
+            </div>
+            <div class="div-links-finais">
+                <h2>Legal</h2>
+                <div id="div-flutuante-n">
+                    <a href="#">Termos de Uso</a><br>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div id="div-newsletter">
+                <h2>Entre para nossa lista</h2>
+                <div>
+                    <p>Saiba quando tivermos novidades.</p>
+                    <form action="" method="get">
+                        <label for="get-nome">Nome:</label>
+                        <input type="text" id="get-nome" name="nome"><br>
+                        <label for="get-email">Email:</label>
+                        <input type="text" id="get-email" name="email"><br>
+                        <input type="submit" value="Quero receber!">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section-creditos">
+            <p>Esse website foi desenvolvido por <a class="dev-logo-link" href="https://www.leojs.dev" target="_blank" rel="author"><span class="dev-logo-caixa"><span class="dev-logo-texto leo">Leo</span><span class="dev-logo-texto js">JS</span></span></a>. Saiba mais em <a class="emoji" href="https://www.leojs.dev" target="_blank">leojs.dev</a>.</p>
+            <p><span class="portaleiros">P&oslash;rtaleir&oslash;s</span><sup>&copy;</sup> é uma criação de Leon Lacerda. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+</body>
+</html>

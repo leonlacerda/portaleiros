@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main a:hover {
+    background-color:var(--cor5);
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px var(--cor1);
+}
+
+main a:hover, footer a:hover {
+    color: var(--cor1) !important;
+    font-weight: bold; 
+    transition: .1s;
+}
+
+main a:not(.breadcrumb-link)::after, footer > section.section-creditos a:not(.dev-logo-link)::after {
+    content: '\1F517';
+    font-size: .8em;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main {
+    background-color: white;
+    border: 2px solid var(--cor5);
+    padding: 0 40px 40px;
+}
+
+main > h1 {
+    font-family: var(--fonte-texto);
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+main > h2 {
+    font: normal 600 1.5em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-align: center; 
+}
+
+main > h3 {
+    font: normal 600 1.5em var(--fonte-texto);
+    padding: 15px 0 10px;
+}
+
+main > h4 {
+    font: normal 600 1.2em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-indent: 40px;
+}
+
+
+main > h4::before {
+    content: "\25AA";
+    font-style: normal;
+    font-size: 1.1em;
+    padding-right: 10px;
+}
+
+main > h5 {
+    font: italic 600 1em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-indent: 40px;
+}
+
+main > h5::before {
+    content: "\25AC\25AC";
+    font-style: normal;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    padding-right: 10px;
+}
+
+main > p {
+    font: normal normal .9em var(--fonte-texto);
+    padding: 5px 0;
+    text-indent: 40px;
+    line-height: 30px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+footer{
+    background-color: var(--cor5);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    display: block;
+    margin: auto;
+    font-family: var(--fonte-texto);
+    font-size: .8em;
+    line-height: 2em;
+}
+
+span.dev-logo-caixa {
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1em;
+    border: 1px solid white;
+}
+
+span.dev-logo-texto {
+    font: normal 600 1em var(--fonte-leojs);
+    padding: 0 5px;
+}
+
+span.leo {
+    color: white;
+    background-color: var(--cor5);
+}
+
+span.js {
+    color: var(--cor5);
+    background-color: #EFD81D;
+}

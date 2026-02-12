@@ -1,0 +1,47 @@
+.burger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor5);
+    box-shadow: 1px 1px 1px var(--cor4);
+}
+
+.line {
+    fill: none;
+    stroke: var(--cor4);
+    stroke-width: 6px;
+}
+
+.plate .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+}
+
+.active.plate .line {
+    transition: transform 400ms;
+}
+
+.active.plate .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+}
+
+.active.plate .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+}
+
+.active.plate .line3 {
+    transform: translateY(0px) rotate(0deg) scale(0);
+}
+
+.active.plate .line4 {
+    transform: translateY(0px) rotate(0deg) scale(0);
+}
+
+.active.plate .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+}
+
+.active.plate .line6 {
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+}

@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
+
+:root {
+    --fonte-h2: 'Cherry Swash', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main a:not(.breadcrumb-link):hover {
+    background-color:var(--cor5);
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px var(--cor1);
+
+}
+
+main a:hover, footer a:hover {
+    color: var(--cor1);
+    font-weight: bold; 
+    transition: .1s;
+}
+
+main a:not(.breadcrumb-link,.linkh1,.linkh2,.linkh3,.linkh4)::after, footer > section.section-creditos a:not(.dev-logo-link)::after {
+    content: '\1F517';
+    font-size: .8em;
+}
+
+main a.breadcrumb-inicio::before {
+    content: '\002302';
+    padding-right: 5px;
+    color: white; 
+}
+
+main a.breadcrumb-depois::before {
+    content: '\003E';
+    padding: 0 5px;
+    color: white;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main {
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--cor5);
+}
+
+nav#bread {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 40px;
+    color: white;
+    font-family: var(--fonte-link);
+    font-weight: bold;
+    font-size: .8em;
+    background-color: var(--cor5);
+    text-align: left;
+    line-height: 50px;
+}
+
+div#sob-bread {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+article#principal {
+    order: 2;
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 0 40px;
+}
+
+side#indice {
+    box-sizing: border-box;
+    margin-top: -19px;
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/*
+@media screen and (min-width: 800px) {
+    side#indice {
+        flex-grow: 0.5;
+        flex-basis: 0;
+    }
+}
+*/
+
+div#esconder, button#aperta-indice {
+    position: sticky;
+    box-sizing: border-box;
+    top: 0px;
+}
+
+div#esconder {
+    width: 100%;
+    float: left;
+    margin-top: -60px;
+    margin-left: -10px;
+    padding: 0px 0px 0 10px;
+    border-width: 2px 2px 0px 0px;
+    border-style: solid;
+    border-color: var(--cor5);
+    background-color: white;
+    min-width: 180px;
+}
+
+#indice-scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl; /* Coloca a barra de rolagem à esquerda invertendo os elementos */
+    margin-left: -40px;
+    margin-top: -1px;
+    height: calc(100vh - 90px);
+    border-bottom: 2px solid black;   
+}
+
+#indice-scroll::-webkit-scrollbar {
+    width: 30px;
+    background-color: var(--cor1);
+    border-right: 2px solid black;
+  }
+
+#indice-scroll::-webkit-scrollbar-track {
+    box-shadow: 0px 1px 0px 0px black;
+  }
+
+#indice-scroll::-webkit-scrollbar-track {
+    box-shadow: 0;
+  }
+
+#indice-scroll::-webkit-scrollbar-thumb {
+    background: var(--cor5); 
+    border-radius: 0px;
+  }
+
+#indice-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--cor4); 
+  }
+
+#indice-scroll > #ltr { 
+    direction: ltr; /* Desinverte os elementos dentro da barra de rolagem */
+    margin: 10px;
+}
+
+button#aperta-indice {
+    display: block;
+    margin-left: -40px;
+    margin-bottom: -1px;
+    height: 60px;
+    width: 30px;
+    background-color: var(--cor1);
+    cursor: pointer;
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: var(--cor5);
+    font-size: 1.2em;
+    color: var(--cor5);
+}
+
+button#aperta-indice:hover {
+    color: var(--cor4);
+}
+
+button.triangulo:hover  {
+    color: var(--cor4);
+}
+
+side#indice h1, side#indice a {
+    font-size: 1em;
+}
+
+side#indice h1 {
+    text-align: center;
+    font: normal bold .9em var(--fonte-texto);
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+side#indice div.linha {
+    display: block;
+    width: fit-content;
+    font: normal normal .9em var(--fonte-texto);
+    line-height: 30px;
+    hyphens: auto;
+}
+
+side#indice div.linha1 {
+    margin-left: 10px;
+}
+
+side#indice div.linha2 {
+    margin-left: 30px;
+}
+
+side#indice div.linha3 {
+    margin-left: 50px;
+}
+
+side#indice button.triangulo {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+side#indice button.triangulo {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+side#indice button.triangulo:not(.quadrado) {
+    cursor: pointer;
+}
+
+article#principal > h1 {
+    font: normal bold 2em var(--fonte-h2); 
+    text-align: center;
+    padding: 20px 0 20px;
+    text-decoration-line: overline;
+    text-decoration-color: var(--cor4);
+    text-decoration-thickness: 5px;
+}
+
+#estrela-negra {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: -15px;
+    padding-bottom: 20px;
+}
+
+article#principal h2 {
+    font: normal 600 1.5em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-align: center; 
+}
+
+article#principal h3 {
+    font: normal 600 1.5em var(--fonte-texto);
+    padding: 15px 0 10px;
+}
+
+article#principal h4 {
+    font: normal 600 1.2em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-indent: 40px;
+}
+
+article#principal h4::before {
+    content: "\25AA";
+    font-style: normal;
+    font-size: 1.1em;
+    padding-right: 10px;
+}
+
+article#principal h5 {
+    font: italic 600 1em var(--fonte-texto);
+    padding: 15px 0 10px;
+    text-indent: 40px;
+}
+
+article#principal h5::before {
+    content: "\25AC\25AC";
+    font-style: normal;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    padding-right: 10px;
+}
+
+article#principal p:not(.subtitulo) {
+    font: normal normal .9em var(--fonte-texto);
+    padding: 5px 0px;
+    text-indent: 40px;
+    line-height: 30px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+span.negrito {
+    font-weight: bold;
+}
+
+.quote {
+    padding: 20px 0;
+    font-size: .9em;
+    font-family: var(--fonte-texto);
+    line-height: 20px;
+    hyphens: auto;
+    margin-left: 50%;
+}
+
+.quote blockquote {
+    font-style: italic;
+    padding-bottom: 10px;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.quote figcaption {
+    text-align: end;
+}
